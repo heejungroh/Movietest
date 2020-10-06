@@ -13,14 +13,17 @@ const ItemBody = styled.div`
 `;
 
 const movieItem = styled.div`
+  position: relative;
   padding-left: 50px;
   text-align: center;
+  margin-top: 10px;
 `;
 
 const Button = styled.button`
   color: white;
   width: 70px;
   height: 30px;
+  margin: 7px;
   background-color: lightsalmon;
 `;
 
@@ -37,6 +40,7 @@ const MovieList = (props) => {
             style={{ width: "100%", height: "200px", width: "200px" }}
           />
           <h4>{title}</h4>
+          <Button>상세보기</Button>
           <Button onClick={() => deleteById(id)}>삭제</Button>
         </movieItem>
       </ItemBody>
