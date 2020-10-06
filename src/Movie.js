@@ -1,4 +1,10 @@
 import React, { useState } from "react";
+import styled from "styled-components";
+
+const RegStyle = styled.div`
+  text-align: center;
+  margin-bottom: 20px;
+`;
 
 const Movie = () => {
   const [movie, setMovie] = useState({
@@ -35,7 +41,8 @@ const Movie = () => {
       });
   }
   return (
-    <div>
+    <RegStyle>
+      <h2>영화 등록</h2>
       <form>
         <input
           type="text"
@@ -71,7 +78,7 @@ const Movie = () => {
         <br />
         <button onClick={submit}>등록</button>
       </form>
-    </div>
+    </RegStyle>
   );
 };
 

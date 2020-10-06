@@ -45,10 +45,14 @@ function App() {
 
   return (
     <div className="grid-container">
-      {movies.map((movie) => (
-        <MovieList movie={movie} deleteById={deleteById} />
-      ))}
-      <Movie />
+      <div>
+        <Movie />
+      </div>
+      <div>
+        {movies.map((movie) => (
+          <MovieList movie={movie} deleteById={deleteById} />
+        ))}
+      </div>
     </div>
   );
 }
