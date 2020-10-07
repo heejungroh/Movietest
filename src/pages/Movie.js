@@ -48,7 +48,6 @@ const Movie = () => {
           type="text"
           onChange={inputHandle}
           name="title"
-          value={movie.title}
           placeholder="제목을 입력하세요"
         />
         <br />
@@ -56,7 +55,6 @@ const Movie = () => {
           type="text"
           onChange={inputHandle}
           name="rating"
-          value={movie.rating}
           placeholder="평점을 입력하세요"
         />
         <br />
@@ -64,7 +62,6 @@ const Movie = () => {
           type="text"
           onChange={inputHandle}
           name="summary"
-          value={movie.summary}
           placeholder="줄거리를 입력하세요"
         />
         <br />
@@ -72,7 +69,6 @@ const Movie = () => {
           type="text"
           onChange={inputHandle}
           name="medium_cover_image"
-          value={movie.medium_cover_image}
           placeholder="medium_cover_image 입력하세요"
         />
         <br />
